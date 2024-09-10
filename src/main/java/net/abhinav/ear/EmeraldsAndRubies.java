@@ -1,5 +1,7 @@
 package net.abhinav.ear;
 
+import net.abhinav.ear.block.ModBlocks;
+import net.abhinav.ear.creative_mode_tab.ModCreativeModeTabs;
 import net.abhinav.ear.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -14,6 +16,8 @@ public class EmeraldsAndRubies implements ModInitializer {
     public void onInitialize() {
 
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
+        ModCreativeModeTabs.registerModCreativeModeTabs();
 
     }
 }

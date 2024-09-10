@@ -5,15 +5,20 @@
   "name": "Emeralds And Rubies",
   "description": "",
   "authors": [
-    "Abhinav VS"
+    "Abhinav VS (InventoStarz)"
   ],
-  "contact": {},
+  "contact": {
+    "homepage": "https://creations-inventostarz.pages.dev"
+  },
   "license": "All-Rights-Reserved",
   "icon": "assets/ear/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
       "net.abhinav.ear.EmeraldsAndRubies"
+    ],
+    "fabric-datagen": [
+      "net.abhinav.ear.EmeraldsAndRubiesDataGen"
     ]
   },
   "depends": {

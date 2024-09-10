@@ -1,24 +1,17 @@
 package net.abhinav.ear.item;
 
-import com.google.common.base.Suppliers;
 import net.minecraft.block.Block;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 
 import java.util.Objects;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    RUBY(ModBlockTags.INCORRECT_FOR_RUBY_TOOL, 1631, 8.2F, 3.5F, 12, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.RUBY});
-    }),
-    EMERALD(ModBlockTags.INCORRECT_FOR_EMERALD_TOOL, 1961, 9.0F, 6.0F, 17, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.EMERALD});
-    });
+    RUBY(ModBlockTags.INCORRECT_FOR_RUBY_TOOL, 1631, 8.2F, 3.5F, 12, () -> Ingredient.ofItems(ModItems.RUBY)),
+    EMERALD(ModBlockTags.INCORRECT_FOR_EMERALD_TOOL, 1961, 9.0F, 6.0F, 17, () -> Ingredient.ofItems(Items.EMERALD));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
@@ -27,37 +20,42 @@ public enum ModToolMaterials implements ToolMaterial {
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    private ModToolMaterials(final TagKey inverseTag, final int itemDurability, final float miningSpeed, final float attackDamage, final int enchantability, final Supplier repairIngredient) {
+    ModToolMaterials(TagKey<Block> inverseTag, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.inverseTag = inverseTag;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;
         this.enchantability = enchantability;
-        Objects.requireNonNull(repairIngredient);
-        this.repairIngredient = (Supplier<Ingredient>) Suppliers.memoize(repairIngredient::get);
+        this.repairIngredient = Objects.requireNonNull(repairIngredient);
     }
 
+    @Override
     public int getDurability() {
         return this.itemDurability;
     }
 
+    @Override
     public float getMiningSpeedMultiplier() {
         return this.miningSpeed;
     }
 
+    @Override
     public float getAttackDamage() {
         return this.attackDamage;
     }
 
+    @Override
     public TagKey<Block> getInverseTag() {
         return this.inverseTag;
     }
 
+    @Override
     public int getEnchantability() {
         return this.enchantability;
     }
 
+    @Override
     public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
+        return this.repairIngredient.get();
     }
 }
