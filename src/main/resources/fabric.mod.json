@@ -4,7 +4,9 @@
   "version": "${version}",
   "name": "Emeralds And Rubies",
   "description": "",
-  "authors": [],
+  "authors": [
+    "Abhinav VS"
+  ],
   "contact": {},
   "license": "All-Rights-Reserved",
   "icon": "assets/ear/icon.png",
@@ -14,9 +16,6 @@
       "net.abhinav.ear.EmeraldsAndRubies"
     ]
   },
-  "mixins": [
-    "ear.mixins.json"
-  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
