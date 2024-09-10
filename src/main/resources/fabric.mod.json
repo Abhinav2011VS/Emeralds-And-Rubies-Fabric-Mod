@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "ear",
+  "version": "${version}",
+  "name": "Emeralds And Rubies",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/ear/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.abhinav.ear.EmeraldsAndRubies"
+    ]
+  },
+  "mixins": [
+    "ear.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
