@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 170,
+  "experience": 0.3,
+  "group": "emerald",
+  "ingredient": {
+    "item": "ear:nether_emerald_ore"
+  },
+  "result": {
+    "id": "ear:ruby"
+  }
+}

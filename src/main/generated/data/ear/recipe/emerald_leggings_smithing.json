@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:emerald"
+  },
+  "base": {
+    "item": "minecraft:diamond_leggings"
+  },
+  "result": {
+    "count": 1,
+    "id": "ear:emerald_leggings"
+  },
+  "template": {
+    "item": "ear:emerald_upgrade_smithing_template"
+  }
+}

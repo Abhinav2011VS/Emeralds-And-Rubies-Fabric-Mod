@@ -1,0 +1,12 @@
+{
+  "values": [
+    "ear:raw_ruby_block",
+    "ear:ruby_block",
+    "ear:ruby_ore",
+    "ear:deepslate_ruby_ore",
+    "ear:nether_ruby_ore",
+    "ear:end_stone_ruby_ore",
+    "ear:nether_emerald_ore",
+    "ear:end_stone_emerald_ore"
+  ]
+}

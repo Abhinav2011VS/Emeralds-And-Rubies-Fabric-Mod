@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 120,
+  "experience": 0.45,
+  "group": "emerald",
+  "ingredient": {
+    "item": "ear:end_stone_emerald_ore"
+  },
+  "result": {
+    "id": "ear:ruby"
+  }
+}
