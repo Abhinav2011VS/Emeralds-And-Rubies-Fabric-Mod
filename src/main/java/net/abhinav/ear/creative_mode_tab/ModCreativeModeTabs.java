@@ -39,7 +39,6 @@ public class ModCreativeModeTabs {
                         entries.add(ModItems.EMERALD_CHESTPLATE);
                         entries.add(ModItems.EMERALD_LEGGINGS);
                         entries.add(ModItems.EMERALD_BOOTS);
-                        entries.add(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE);
                         entries.add(ModBlocks.RUBY_ORE);
                         entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
                         entries.add(ModBlocks.NETHER_RUBY_ORE);
