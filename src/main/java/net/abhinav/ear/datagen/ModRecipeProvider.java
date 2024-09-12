@@ -36,10 +36,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerSmelting(exporter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY, 0.25f, 150, "ruby");
         offerBlasting(exporter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY, 0.25f, 100, "ruby");
-        offerSmelting(exporter, EMERALD_MODDED_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY, 0.30f, 170, "emerald");
-        offerBlasting(exporter, EMERALD_MODDED_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY, 0.45f, 120, "emerald");
+        offerSmelting(exporter, EMERALD_MODDED_SMELTABLES, RecipeCategory.MISC, Items.EMERALD, 0.30f, 170, "emerald");
+        offerBlasting(exporter, EMERALD_MODDED_SMELTABLES, RecipeCategory.MISC, Items.EMERALD, 0.45f, 120, "emerald");
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RAW_RUBY_BLOCK)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_RUBY_BLOCK)
                 .pattern("RRR")
                 .pattern("RRR")
                 .pattern("RRR")
@@ -52,7 +52,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.RAW_RUBY_BLOCK), conditionsFromItem(ModBlocks.RAW_RUBY_BLOCK))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_BLOCK)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_BLOCK)
                 .pattern("RRR")
                 .pattern("RRR")
                 .pattern("RRR")
@@ -65,15 +65,91 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.RUBY_BLOCK), conditionsFromItem(ModBlocks.RUBY_BLOCK))
                 .offerTo(exporter);
 
-        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_SWORD, RecipeCategory.MISC, ModItems.EMERALD_SWORD);
-        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_PICKAXE, RecipeCategory.MISC, ModItems.EMERALD_PICKAXE);
-        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_AXE, RecipeCategory.MISC, ModItems.EMERALD_AXE);
-        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_SHOVEL, RecipeCategory.MISC, ModItems.EMERALD_SHOVEL);
-        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_HOE, RecipeCategory.MISC, ModItems.EMERALD_HOE);
-        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_HELMET, RecipeCategory.MISC, ModItems.EMERALD_HELMET);
-        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_CHESTPLATE, RecipeCategory.MISC, ModItems.EMERALD_CHESTPLATE);
-        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_LEGGINGS, RecipeCategory.MISC, ModItems.EMERALD_LEGGINGS);
-        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_BOOTS, RecipeCategory.MISC, ModItems.EMERALD_BOOTS);
+        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_SWORD, RecipeCategory.COMBAT, ModItems.EMERALD_SWORD);
+        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_PICKAXE, RecipeCategory.TOOLS, ModItems.EMERALD_PICKAXE);
+        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_AXE, RecipeCategory.TOOLS, ModItems.EMERALD_AXE);
+        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_SHOVEL, RecipeCategory.TOOLS, ModItems.EMERALD_SHOVEL);
+        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_HOE, RecipeCategory.TOOLS, ModItems.EMERALD_HOE);
+        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_HELMET, RecipeCategory.COMBAT, ModItems.EMERALD_HELMET);
+        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_CHESTPLATE, RecipeCategory.COMBAT, ModItems.EMERALD_CHESTPLATE);
+        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_LEGGINGS, RecipeCategory.COMBAT, ModItems.EMERALD_LEGGINGS);
+        offerEmeraldUpgradeRecipe(exporter, Items.DIAMOND_BOOTS, RecipeCategory.COMBAT, ModItems.EMERALD_BOOTS);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_AXE)
+                .pattern("RR ")
+                .pattern("RS ")
+                .pattern(" S ")
+                .input('R', ModItems.RUBY)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_HOE)
+                .pattern("RR ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('R', ModItems.RUBY)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_PICKAXE)
+                .pattern("RRR")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('R', ModItems.RUBY)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_SHOVEL)
+                .pattern(" R ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('R', ModItems.RUBY)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.RUBY_SWORD)
+                .pattern(" R ")
+                .pattern(" R ")
+                .pattern(" S ")
+                .input('R', ModItems.RUBY)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.RUBY_HELMET)
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("   ")
+                .input('R', ModItems.RUBY)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.RUBY_CHESTPLATE)
+                .pattern("R R")
+                .pattern("RRR")
+                .pattern("RRR")
+                .input('R', ModItems.RUBY)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.RUBY_LEGGINGS)
+                .pattern("RRR")
+                .pattern("R R")
+                .pattern("R R")
+                .input('R', ModItems.RUBY)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.RUBY_BOOTS)
+                .pattern("R R")
+                .pattern("R R")
+                .input('R', ModItems.RUBY)
+                .criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .offerTo(exporter);
 
     }
 }

@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "equipment",
   "key": {
     "R": {
-      "item": "ear:raw_ruby"
+      "item": "ear:ruby"
     }
   },
   "pattern": [
     "RRR",
-    "RRR",
-    "RRR"
+    "R R",
+    "R R"
   ],
   "result": {
     "count": 1,
-    "id": "ear:raw_ruby_block"
+    "id": "ear:ruby_leggings"
   }
 }

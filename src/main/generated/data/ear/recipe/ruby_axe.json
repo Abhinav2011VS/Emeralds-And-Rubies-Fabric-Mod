@@ -1,18 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "equipment",
   "key": {
     "R": {
       "item": "ear:ruby"
+    },
+    "S": {
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "RRR",
-    "RRR",
-    "RRR"
+    "RR ",
+    "RS ",
+    " S "
   ],
   "result": {
     "count": 1,
-    "id": "ear:ruby_block"
+    "id": "ear:ruby_axe"
   }
 }
