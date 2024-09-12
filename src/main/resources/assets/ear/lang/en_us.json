@@ -1,6 +1,7 @@
 {
   "item.ear.ruby": "Ruby",
   "item.ear.raw_ruby": "Raw Ruby",
+  "item.ear.citrine_shard": "Citrine Shard",
 
   "block.ear.ruby_block": "Block of Ruby",
   "block.ear.raw_ruby_block": "Block of Raw Ruby",
@@ -13,17 +14,28 @@
   "block.ear.nether_emerald_ore": "Nether Emerald Ore",
   "block.ear.end_stone_emerald_ore": "End Stone Emerald Ore",
 
+  "item.ear.emerald_apple": "Emerald Apple",
+  "item.ear.enchanted_emerald_apple": "Enchanted Emerald Apple",
+
   "item.ear.ruby_pickaxe": "Ruby Pickaxe",
   "item.ear.ruby_axe": "Ruby Axe",
   "item.ear.ruby_shovel": "Ruby Shovel",
   "item.ear.ruby_sword": "Ruby Sword",
   "item.ear.ruby_hoe": "Ruby Hoe",
+  "item.ear.ruby_paxel": "Ruby Paxel",
+  "item.ear.ruby_hammer": "Ruby Hammer",
+  "item.ear.ruby_bow": "Ruby Bow",
 
   "item.ear.emerald_pickaxe": "Emerald Pickaxe",
   "item.ear.emerald_axe": "Emerald Axe",
   "item.ear.emerald_shovel": "Emerald Shovel",
   "item.ear.emerald_sword": "Emerald Sword",
   "item.ear.emerald_hoe": "Emerald Hoe",
+  "item.ear.emerald_paxel": "Emerald Paxel",
+  "item.ear.emerald_hammer_head": "Emerald Hammer Head",
+  "item.ear.emerald_hammer_holder": "Emerald Hammer Holder",
+  "item.ear.emerald_hammer": "Emerald Hammer",
+  "item.ear.emerald_bow": "Emerald Bow",
 
   "item.ear.ruby_helmet": "Ruby Helmet",
   "item.ear.ruby_chestplate": "Ruby Chestplate",
@@ -35,15 +47,23 @@
   "item.ear.emerald_leggings": "Emerald Leggings",
   "item.ear.emerald_boots": "Emerald Boots",
 
-  "item.ear.smithing_template.emerald_upgrade.applies_to": "Diamond Equipment",
-  "item.ear.smithing_template.emerald_upgrade.ingredients": "Emerald",
-  "item.ear.smithing_template.emerald_upgrade.base_slot_description": "Add diamond armor, weapon, or tool",
-  "item.ear.smithing_template.netherite_upgrade.additions_slot_description": "Add Emerald",
-  "upgrade.ear.emerald_upgrade": "Emerald Upgrade",
+  "item.ear.wooden_hammer": "Wooden Hammer",
+  "item.ear.stone_hammer": "Stone Hammer",
+  "item.ear.iron_hammer": "Iron Hammer",
+  "item.ear.golden_hammer": "Golden Hammer",
+  "item.ear.diamond_hammer": "Diamond Hammer",
+  "item.ear.netherite_hammer": "Netherite Hammer",
 
-  "item.ear.emerald_upgrade": "Smithing Template",
+  "item.minecraft.smithing_template.emerald_upgrade.applies_to": "Diamond Equipment",
+  "item.minecraft.smithing_template.emerald_upgrade.ingredients": "Emerald",
+  "item.minecraft.smithing_template.emerald_upgrade.base_slot_description": "Add diamond armor, weapon, or tool",
+  "item.minecraft.smithing_template.netherite_upgrade.additions_slot_description": "Add Emerald",
+  "upgrade.minecraft.emerald_upgrade": "Emerald Upgrade",
+
+  "item.ear.emerald_upgrade_smithing_template": "Smithing Template",
 
   "itemgroup.ear.emeralds_and_rubies": "Emeralds And Rubies",
 
+  "tooltip.ear.emerald_apple.tooltip": "Tasty!",
   "tooltip.ear.enchanted_emerald_apple.tooltip": "Delicious And Powerful!"
 }

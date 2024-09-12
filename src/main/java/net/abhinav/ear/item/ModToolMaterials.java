@@ -5,13 +5,14 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.TagKey;
+import net.abhinav.ear.util.ModTags;
 
 import java.util.Objects;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    RUBY(ModBlockTags.INCORRECT_FOR_RUBY_TOOL, 1631, 8.2F, 3.5F, 12, () -> Ingredient.ofItems(ModItems.RUBY)),
-    EMERALD(ModBlockTags.INCORRECT_FOR_EMERALD_TOOL, 1961, 9.0F, 6.0F, 17, () -> Ingredient.ofItems(Items.EMERALD));
+    RUBY(ModTags.Blocks.INCORRECT_FOR_RUBY_TOOL, 1631, 8.2F, 3.5F, 12, () -> Ingredient.ofItems(ModItems.RUBY)),
+    EMERALD(ModTags.Blocks.INCORRECT_FOR_EMERALD_TOOL, 1961, 9.0F, 6.0F, 17, () -> Ingredient.ofItems(Items.EMERALD));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

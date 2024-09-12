@@ -35,17 +35,24 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.RUBY, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_RUBY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CITRINE_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EMERALD_HAMMER_HEAD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EMERALD_HAMMER_HOLDER, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.RUBY_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUBY_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUBY_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUBY_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RUBY_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RUBY_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.RUBY_PAXEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.EMERALD_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.EMERALD_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.EMERALD_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.EMERALD_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.EMERALD_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.EMERALD_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.EMERALD_PAXEL, Models.HANDHELD);
 
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.RUBY_CHESTPLATE));
@@ -55,6 +62,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMERALD_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMERALD_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMERALD_BOOTS));
+
+        itemModelGenerator.register(ModItems.WOODEN_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLDEN_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_HAMMER, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.EMERALD_APPLE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
     }

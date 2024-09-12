@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "E": {
+      "item": "ear:citrine_shard"
+    },
+    "H": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "E",
+    "H"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ear:emerald_hammer"
+  }
+}

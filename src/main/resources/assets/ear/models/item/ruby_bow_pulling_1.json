@@ -1,0 +1,6 @@
+{
+  "parent": "ear:item/ruby_bow",
+  "textures": {
+    "layer0": "ear:item/ruby_bow_pulling_1"
+  }
+}

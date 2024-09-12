@@ -1,0 +1,6 @@
+{
+  "parent": "ear:item/emerald_bow",
+  "textures": {
+    "layer0": "ear:item/emerald_bow_pulling_0"
+  }
+}

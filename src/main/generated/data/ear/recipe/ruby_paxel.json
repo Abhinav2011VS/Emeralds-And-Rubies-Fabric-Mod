@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "R": {
+      "item": "ear:ruby"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "RS ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ear:ruby_paxel"
+  }
+}

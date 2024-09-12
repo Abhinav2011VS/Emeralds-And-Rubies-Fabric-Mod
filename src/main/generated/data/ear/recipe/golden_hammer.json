@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WSW",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ear:golden_hammer"
+  }
+}

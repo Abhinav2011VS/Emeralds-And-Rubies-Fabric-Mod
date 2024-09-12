@@ -19,6 +19,7 @@ public class ModCreativeModeTabs {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.RUBY);
                         entries.add(ModItems.RAW_RUBY);
+                        entries.add(ModItems.CITRINE_SHARD);
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
                         entries.add(ModItems.RUBY_AXE);
@@ -26,11 +27,19 @@ public class ModCreativeModeTabs {
                         entries.add(ModItems.RUBY_PICKAXE);
                         entries.add(ModItems.RUBY_SHOVEL);
                         entries.add(ModItems.RUBY_SWORD);
+                        entries.add(ModItems.RUBY_PAXEL);
+                        entries.add(ModItems.RUBY_HAMMER);
+                        entries.add(ModItems.RUBY_BOW);
                         entries.add(ModItems.EMERALD_AXE);
                         entries.add(ModItems.EMERALD_HOE);
                         entries.add(ModItems.EMERALD_PICKAXE);
                         entries.add(ModItems.EMERALD_SHOVEL);
                         entries.add(ModItems.EMERALD_SWORD);
+                        entries.add(ModItems.EMERALD_PAXEL);
+                        entries.add(ModItems.EMERALD_HAMMER_HEAD);
+                        entries.add(ModItems.EMERALD_HAMMER_HOLDER);
+                        entries.add(ModItems.EMERALD_HAMMER);
+                        entries.add(ModItems.EMERALD_BOW);
                         entries.add(ModItems.RUBY_HELMET);
                         entries.add(ModItems.RUBY_CHESTPLATE);
                         entries.add(ModItems.RUBY_LEGGINGS);
@@ -39,6 +48,9 @@ public class ModCreativeModeTabs {
                         entries.add(ModItems.EMERALD_CHESTPLATE);
                         entries.add(ModItems.EMERALD_LEGGINGS);
                         entries.add(ModItems.EMERALD_BOOTS);
+                        entries.add(ModItems.EMERALD_UPGRADE_SMITHING_TEMPLATE);
+                        entries.add(ModItems.EMERALD_APPLE);
+                        entries.add(ModItems.ENCHANTED_EMERALD_APPLE);
                         entries.add(ModBlocks.RUBY_ORE);
                         entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
                         entries.add(ModBlocks.NETHER_RUBY_ORE);

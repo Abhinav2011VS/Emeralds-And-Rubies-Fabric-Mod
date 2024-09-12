@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WSW",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "ear:diamond_hammer"
+  }
+}
