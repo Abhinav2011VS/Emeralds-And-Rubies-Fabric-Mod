@@ -195,11 +195,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.EMERALD_HAMMER)
-                .pattern("E")
-                .pattern("H")
-                .input('E', ModItems.EMERALD_HAMMER_HEAD)
-                .input('H', ModItems.EMERALD_HAMMER_HOLDER)
-                .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
+                .pattern("G")
+                .pattern("Z")
+                .input('G', ModItems.EMERALD_HAMMER_HEAD)
+                .input('Z', ModItems.EMERALD_HAMMER_HOLDER)
+                .criterion(hasItem(ModItems.EMERALD_HAMMER_HEAD), conditionsFromItem(ModItems.EMERALD_HAMMER_HEAD))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.STONE_HAMMER)

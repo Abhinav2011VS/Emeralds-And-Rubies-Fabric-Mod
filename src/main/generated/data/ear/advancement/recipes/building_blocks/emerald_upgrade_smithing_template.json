@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_emerald_hammer_head": {
+    "has_emerald_upgrade_smithing_template": {
       "conditions": {
         "items": [
           {
-            "items": "ear:emerald_hammer_head"
+            "items": "ear:emerald_upgrade_smithing_template"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "ear:emerald_hammer"
+        "recipe": "ear:emerald_upgrade_smithing_template"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_emerald_hammer_head"
+      "has_emerald_upgrade_smithing_template"
     ]
   ],
   "rewards": {
     "recipes": [
-      "ear:emerald_hammer"
+      "ear:emerald_upgrade_smithing_template"
     ]
   }
 }

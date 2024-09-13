@@ -41,7 +41,7 @@ public class ModPlacedFeatures {
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(80)))); // Ruby ores generate between Y levels 0 and 80 in the End
 
         register(context, NETHER_EMERALD_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NETHER_EMERALD_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(12, // Set the count of Emerald ore veins per chunk to 12
+                ModOrePlacement.modifiersWithCount(18, // Set the count of Emerald ore veins per chunk to 18
                         HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(120)))); // Emerald ores generate between Y levels 0 and 120 in the Nether
 
         register(context, END_EMERALD_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.END_EMERALD_ORE_KEY),

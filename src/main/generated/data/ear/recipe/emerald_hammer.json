@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "E": {
-      "item": "ear:citrine_shard"
+    "G": {
+      "item": "ear:emerald_hammer_head"
     },
-    "H": {
-      "item": "minecraft:stick"
+    "Z": {
+      "item": "ear:emerald_hammer_holder"
     }
   },
   "pattern": [
-    "E",
-    "H"
+    "G",
+    "Z"
   ],
   "result": {
     "count": 1,
